@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Accordion from "./Accordion";
+import CheckBox from "./CheckBox";
 
 function App() {
   const accordionData = [
@@ -36,7 +37,9 @@ function App() {
 
   return (
     <div>
-      <h1 className="text-center text-2xl font-bold underline m-5">React Accordion</h1>
+      <h1 className="text-center text-2xl font-bold underline m-5">
+        React Accordion
+      </h1>
       {/* ** For single object */}
       {/* <div className="bg-red-400 w-[40vw] block m-auto flex-col">
         <div>
@@ -54,6 +57,9 @@ function App() {
       {accordionData.map(({ title, content }) => (
         <Accordion title={title} content={content} />
       ))}
+      <div className="flex justify-center my-20">
+        <CheckBox />
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ const Accordion = ({ title, content }) => {
           onClick={() => setIsActive(!isActive)}
         >
           <h3>{title}</h3>
-          <h3>{isActive ? "-" : "+"}</h3>
+          <h3 className="font-bold">{isActive ? "x" : "+"}</h3>
         </div>
       </div>
       {isActive && <div className="p-3">{content}</div>}
